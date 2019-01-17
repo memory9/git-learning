@@ -3,6 +3,11 @@
   "version": "1.0.0",
   "description": "a repository for git learning",
   "main": "index.js",
+  "config": {
+    "ghooks": {
+      "commit-msg": "validate-commit-msg"
+    }
+  },
   "scripts": {
     "git-cz": "node git-cz.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -20,6 +25,8 @@
   "homepage": "https://github.com/memory9/git-learning#readme",
   "devDependencies": {
     "commitizen": "^3.0.5",
-    "cz-conventional-changelog": "^2.1.0"
+    "cz-conventional-changelog": "^2.1.0",
+    "ghooks": "^2.0.4",
+    "validate-commit-msg": "^2.14.0"
   }
 }
